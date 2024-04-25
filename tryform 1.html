@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Form Validation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='validate.js'></script>
+    <style>
+        .center {
+  padding: 70px 0;
+  border: 3px solid green;
+  text-align: center;
+}
+
+body{
+    background-color:bisque;
+}
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <form onsubmit="return validate()" action="message.html">
+            <label>USERNAME</label>
+            <input type="text" id="username" placeholder="Enter Username"><br><br>
+            <label> PASSWORD</label>
+            <input type="text" id="password" placeholder="Enter password"><br><br>
+        <div class="pyp">
+            <button>SUBMIT</button><br> <br>
+        </div>
+        
+
+        </form>
+        <form onsubmit="return matchpass()" action="forget.html">
+            <div>
+                <button> FORGOT PASSWORD ?</button>
+            </div><br>
+        </form>
+
+        <form action="signup.html">
+            <div>
+                <button> NEW USER ? SIGN UP.</button>
+            </div>
+
+
+        </form>
+    </div>
+    
+</body>
+</html>
